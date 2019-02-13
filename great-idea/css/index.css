@@ -87,7 +87,11 @@ div{
 	box-sizing: border-box;
 }
 .wrap{
-	width: 100%;
+	width: 1000px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
 	margin: 0 auto;
 }
 .main{
@@ -299,4 +303,16 @@ section a{
 .bottom.services ul li{
 	line-height: 2;
 	list-style: disc inside;
+}
+
+/* Media query for mobile */
+@media only screen and (max-width: 600px){
+	.main.services{
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+	.bottom.services{
+		flex-wrap: nowrap;
+		flex-direction: column;		
+	}
 }
