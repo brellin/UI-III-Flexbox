@@ -316,3 +316,29 @@ section a{
 		flex-direction: column;		
 	}
 }
+
+/* Contact Page Specific */
+h1.contact-top{
+	font-size: 30px;
+}
+
+/* Header */
+.header.contact{
+	margin: 0px 0px 25px;
+	background-image: url(../img/services-header.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 800px;
+	height: 200px;
+}
+.header.contact h1{
+	margin-top: 20px;
+	font-size: 145px;
+}
+
+/* Main */
+.main.contact section{
+	width: 25%;
+	padding: 25px 0;
+	border-bottom: 1px solid gray;
+}
