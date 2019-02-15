@@ -134,24 +134,27 @@ nav div{
 
 /*Header*/
 header{
-	margin: 30px 0;
+	margin: 0px 0px;
 	width: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
+	align-items: center;
 }
 header.index{
-	height: 250px;
+	height: 300px;
 }
 header .header-text{
-	height: 300px;
-	width: 300px;
-	padding: 0px 30px;
+	width: 350px;
+	height: 250px;
 	margin: 0px 0px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
 }
 header h1{
 	font-size: 60px;
-	text-align: center;
 }
 header button{
 	background: white;
@@ -162,15 +165,14 @@ header button:hover{
 	animation: button 5s linear 0s infinite normal;
 }
 header .header-image{
+	width: 400px;
 	height: 250px;
-	width: 300px;
-	text-align: right;
+	display: flex;
+	align-items: center;
 	background-image: url('../img/header-img.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-}
-header img{
-	height: 250px;
+	background-position: left;
 }
 
 /*Top-Main + Mid Img*/
@@ -317,9 +319,6 @@ section a{
 }
 
 /* Contact Page Specific */
-h1.contact-top{
-	font-size: 30px;
-}
 
 /* Header */
 .header.contact{
@@ -329,10 +328,13 @@ h1.contact-top{
 	background-repeat: no-repeat;
 	width: 800px;
 	height: 200px;
+	justify-content: center;
 }
 .header.contact h1{
-	margin-top: 20px;
 	font-size: 145px;
+}
+h1.contact-top{
+	font-size: 30px;
 }
 
 /* Main */
@@ -346,4 +348,26 @@ h1.contact-top{
 	margin: 2%;
 	background: lightsteelblue;
 	border-radius: 5%;
+}
+
+/* Features Page Specific */
+
+/* Main */
+.main.features{
+	border-bottom: 1px solid gray;
+	padding-bottom: 25px;
+}
+.main.features div{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.main.features h2{
+	display: inline-block;
+}
+.item{
+	width: 30%;
+	padding: 1%;
+	margin: 1%;
+	background: lightgrey;
 }
