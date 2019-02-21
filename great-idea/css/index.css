@@ -87,12 +87,12 @@ div{
 	box-sizing: border-box;
 }
 .wrap{
-	width: 1000px;
+	width: 800px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	align-items: center;
-	margin: 0 auto;
+	margin: 0px auto;
 }
 .main{
 	width: 800px;
@@ -101,51 +101,60 @@ div{
 	display: flex;
 	flex-wrap: wrap;
 	text-align: left;
+	padding-top: 25px;
 }
 
 /*Nav*/
-nav{
-	height: 75px;
+nav.global-top{
+	height: 60px;
 	width: 100%;
 	text-align: center;
 	box-sizing: border-box;
-	vertical-align: top;
 	position: sticky;
 	top: 0px;
-	background: grey;
+	background: white;
+	display: flex;
 }
 nav a{
-	margin: 0px 20px 0px 20px;
-	color: lightgrey;
+	margin: 25px 20px 0px;
+	color: gray;
 	text-decoration: none;
 }
+nav a.home{
+	margin-top: 15px;
+}
 nav div{
-	display: inline-block;
-	margin: 20px 0px 0px 50px;
 	height: 36px;
 	width: 183px;
+	margin: 0px;
 	background-image: url(../img/logo.png);
 	background-size: contain;
+	float: right;
 }
 
 /*Header*/
 header{
-	margin: 30px 0;
+	margin: 0px 0px;
 	width: 100%;
-	height: 300px;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
+	align-items: center;
+}
+header.index{
+	height: 300px;
 }
 header .header-text{
-	height: 300px;
-	width: 300px;
-	padding: 0px 30px;
+	width: 350px;
+	height: 250px;
 	margin: 0px 0px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
 }
 header h1{
 	font-size: 60px;
-	text-align: center;
 }
 header button{
 	background: white;
@@ -156,15 +165,14 @@ header button:hover{
 	animation: button 5s linear 0s infinite normal;
 }
 header .header-image{
+	width: 400px;
 	height: 250px;
-	width: 300px;
-	text-align: right;
+	display: flex;
+	align-items: center;
 	background-image: url('../img/header-img.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-}
-header img{
-	height: 250px;
+	background-position: left;
 }
 
 /*Top-Main + Mid Img*/
@@ -224,13 +232,6 @@ footer{
 /* Services Page Specific*/
 
 /*Wrap and Header*/
-.wrap.services{
-	width: 1000px;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: center;
-}
 header.services{
 	margin: 0px 0px 30px;
 	width: 800px;
@@ -318,9 +319,6 @@ section a{
 }
 
 /* Contact Page Specific */
-h1.contact-top{
-	font-size: 30px;
-}
 
 /* Header */
 .header.contact{
@@ -330,15 +328,46 @@ h1.contact-top{
 	background-repeat: no-repeat;
 	width: 800px;
 	height: 200px;
+	justify-content: center;
 }
 .header.contact h1{
-	margin-top: 20px;
 	font-size: 145px;
+}
+h1.contact-top{
+	font-size: 30px;
 }
 
 /* Main */
-.main.contact section{
-	width: 25%;
-	padding: 25px 0;
+.main.contact{
+	align-items: stretch;
 	border-bottom: 1px solid gray;
+}
+.main.contact section{
+	width: 45%;
+	padding: 15px;
+	margin: 2%;
+	background: lightsteelblue;
+	border-radius: 5%;
+}
+
+/* Features Page Specific */
+
+/* Main */
+.main.features{
+	border-bottom: 1px solid gray;
+	padding-bottom: 25px;
+}
+.main.features div{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.main.features h2{
+	display: inline-block;
+}
+.item{
+	width: 30%;
+	padding: 1%;
+	margin: 1%;
+	background: lightgrey;
 }
